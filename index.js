@@ -5,11 +5,11 @@ var once = require('once');
 
 var create = function(opts) {
 	if (!opts) opts = {};
-	if (!opts.channel) opts.channel = opts.service || '--global--';
+	if (!opts.channel) opts.channel = opts.service || '-global-';
 	if (!opts.requeue) opts.requeue = 5000;
 	if (!opts.namespace) opts.namespace = '';
 
-	opts.namespace = opts.namespace ? '--'+opts.namespace+'--' : '';
+	opts.namespace = opts.namespace ? '-'+opts.namespace+'-' : '';
 	opts.broadcast = opts.broadcast !== false;
 
 	var that = new events.EventEmitter();
