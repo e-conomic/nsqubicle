@@ -11,7 +11,7 @@ Read messages using `pull` and write messages using `push`
 ``` js
 var nsq = require('nsqubicle');
 var queue = nsq({
-	nsq: ['127.0.0.1:4150'],
+	nsqd: ['127.0.0.1:4150'],
 	channel: 'my-channel'
 });
 
