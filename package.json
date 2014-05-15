@@ -1,7 +1,7 @@
 {
   "name": "nsqubicle",
   "version": "0.1.0",
-  "repository": "e-conomic/ns-cubicle",
+  "repository": "e-conomic/nsqubicle",
   "description": "easy to use module for nsq",
   "dependencies": {
     "nsq.js": "^0.10.1",
