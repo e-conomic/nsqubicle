@@ -106,7 +106,7 @@ var create = function(opts) {
 			if (err) return cb(err);
 			message = JSON.stringify(message);
 			writer.publish(topic, message, cb);
-			if (opts.broadcast) writer.publish('broadcast', topic+'@'+message);
+			if (opts.broadcast) writer.publish(opts.namespace + 'broadcast', topic+'@'+message);
 		});
 	};
 
